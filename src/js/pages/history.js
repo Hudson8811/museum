@@ -1,13 +1,13 @@
 const tl = gsap.timeline();
 
-tl.fromTo('.history__track-date', 1,{top: '200px',}, {top: '0px'}, 0)
+tl.fromTo('.history__track-date', 1,{top: '30px',}, {top: '-30px'}, 0)
 
 ScrollTrigger.create({
 	animation: tl,
 	trigger: '.history',
 	start: '0 0',
 	end: 'center',
-	scrub: true,
+	scrub: 4,
 })
 /* const tl1 = gsap.timeline();
 

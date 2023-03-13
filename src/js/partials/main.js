@@ -1,3 +1,5 @@
+new isvek.Bvi();
+
 function onEntry(entry) {
 	entry.forEach(change => {
 		if (change.isIntersecting) {
@@ -20,3 +22,5 @@ $(document).ready(function() {
         $('.gallary-block__item:hidden').length < 1 ? $('.gallary-block__show-more-btn').hide() : false;
     });
 });
+
+

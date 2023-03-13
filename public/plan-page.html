@@ -74,8 +74,7 @@
           </div>
           <div class="header__right"> 
             <div class="header__icons"> 
-              <div class="header__search"> <img src="images/icons/search.svg" alt="alt"></div>
-              <div class="header__visible"> <img src="images/icons/eye.svg" alt="alt"></div>
+              <div class="header__search"> <img src="images/icons/search.svg" alt="alt"></div><a class="header__visible bvi-open" href=""> <img src="images/icons/eye.svg" alt="alt"></a>
             </div>
             <div class="header__btn btn-header btn-header-desktop">
               <div class="btn-header__text">Купить билет </div>
@@ -91,33 +90,87 @@
       <main class="main">
         <div class="internal-page">
           <div class="plan-page">
-            <div class="plan-page__header"> 
+            <div class="plan-page__header js-hide"> 
               <div class="container">
                 <h1>Спланировать визит </h1>
                 <div class="plan-page__header-bottom">
-                  <div class="plan-page__swiper-btns swiper"> 
+                  <div class="plan-page__swiper-btns swiper" thumbsslider=""> 
                     <div class="swiper-wrapper"> 
-                      <div class="plan-page__slide swiper-slide"> <a class="plan-page__swiper-btn btn-transparent active" href="">Главное здание</a></div>
-                      <div class="plan-page__slide swiper-slide"> <a class="plan-page__swiper-btn btn-transparent" href="">КВЦ Русского музея</a></div>
-                      <div class="plan-page__slide swiper-slide"> <a class="plan-page__swiper-btn btn-transparent" href="">Дом ремесел</a></div>
+                      <div class="plan-page__slide swiper-slide"> 
+                        <div class="plan-page__swiper-btn btn-transparent">Главное здание</div>
+                      </div>
+                      <div class="plan-page__slide swiper-slide"> 
+                        <div class="plan-page__swiper-btn btn-transparent">КВЦ Русского музея</div>
+                      </div>
+                      <div class="plan-page__slide swiper-slide"> 
+                        <div class="plan-page__swiper-btn btn-transparent">Дом ремесел</div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="plan-page__content">
-              <div class="container">
-                <div class="block-left-right__row"> 
-                  <div class="block-left"> 
-                    <p>Главное здание</p>
-                    <p>
-                       183038 г. Мурманск, ул. Коминтерна 13</p>
-                    <p> <a href="">+7(8152)45-03-85</a></p>
-                    <p> <a href="">info@artmmuseum.ru</a></p>
+            <div class="swiper swiper-plan-map js-hide"> 
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="plan-page__content">
+                    <div class="container">
+                      <div class="block-left-right__row"> 
+                        <div class="block-left"> 
+                          <p style="font-weight: 500; margin-bottom: 7px;">Главное здание</p>
+                          <p>
+                             183038 г. Мурманск, ул. Коминтерна 13</p>
+                          <p> <a href="">+7(8152)45-03-85</a></p>
+                          <p> <a href="">info@artmmuseum.ru</a></p>
+                        </div>
+                        <div class="block-right"> 
+                          <div class="block-left-right__map-wrapper">
+                            <div class="block-left-right__map" id="plan__map1"> </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="block-right"> 
-                    <div class="block-left-right__map-wrapper">
-                      <div class="block-left-right__map" id="plan__map"> </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="plan-page__content">
+                    <div class="container">
+                      <div class="block-left-right__row"> 
+                        <div class="block-left"> 
+                          <p style="font-weight: 500; margin-bottom: 7px;">КВЦ Русского музея</p>
+                          <p>
+                             г. Мурманск, ул. Софьи Перовской, 3, II этаж</p>
+                          <p> <a href="">8 (8152) 994-358</a></p>
+                          <p> <a href="">8 (8152) 994-357</a></p>
+                          <p> <a href="">info@artmmuseum.ru</a></p>
+                        </div>
+                        <div class="block-right"> 
+                          <div class="block-left-right__map-wrapper">
+                            <div class="block-left-right__map" id="plan__map2"> </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="plan-page__content">
+                    <div class="container">
+                      <div class="block-left-right__row"> 
+                        <div class="block-left"> 
+                          <p style="font-weight: 500; margin-bottom: 7px;">Дом ремесел</p>
+                          <p>
+                             г.Мурманск, ул.Книповича, д.23А</p>
+                          <p> <a href="">(8152) 45-08-60</a></p>
+                          <p> <a href="">(8152) 45-08-38</a></p>
+                          <p> <a href="">onir@artmmuseum.ru</a></p>
+                        </div>
+                        <div class="block-right"> 
+                          <div class="block-left-right__map-wrapper">
+                            <div class="block-left-right__map" id="plan__map3"> </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -199,7 +252,7 @@
           </div>
         </div>
       </main>
-      <footer class="footer">
+      <footer class="footer js-hide"> 
         <div class="container footer__container"> 
           <div class="footer__top"> 
             <div class="footer__row"> 

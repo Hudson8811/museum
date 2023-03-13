@@ -74,6 +74,7 @@
 		align-items: center;
 		margin-left: 6px;
 		transform: rotate(0deg);
+		pointer-events: none;
 	}
 	&__dropdown {
 		transition: all 0.3s ease 0s;
