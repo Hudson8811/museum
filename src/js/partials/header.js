@@ -50,11 +50,14 @@ $(document).ready(function() {
 		}
 	});
 	
-	var header__menu = $('.header__menu');
-	header__menu.css({'height':'100vh'})
-	$( window ).resize(function() {
-		var header__menu = $('.header__menu');
+	if ($(window).width() < 1100) {
+		
+		var header__menu = $('.header__menu.menu');
 		header__menu.css({'height':'100vh'})
-	});
+		$( window ).resize(function() {
+			var header__menu = $('.header__menu');
+			header__menu.css({'height':'100vh'})
+		});
+	}
 }); 
 
