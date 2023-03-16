@@ -9,7 +9,7 @@ block vars
 block main
 	.internal-page
 		.prices-page
-			.prices-page__header 
+			.prices-page__header.js-hide  
 				.container
 					h1 Цены и льготы 
 					.prices-page__header-bottom
@@ -41,7 +41,7 @@ block main
 					.prices-page__tables-wrapper 
 						table.prices-page__tables-header 
 							tr.prices-page__tables-header-tr
-								th.table-prices__col1 Площадка
+								th.table-prices__col1(style="background: transparent!important;") Площадка
 								th.table-prices__col2 Зал
 								th.table-prices__col3 Взрослые
 								th.table-prices__col4 Пенсионеры, студенты
@@ -55,7 +55,7 @@ block main
 								colgroup
 								tbody
 									tr
-										td(rowspan="5").table-prices__col1  
+										td(rowspan="5").table-prices__col1.table-prices__col1-borrad  
 											a(href="").table__card.card-areas
 												.card-areas__img 
 													img(src="images/blocks/areas/3.png", alt="alt").card-areas__img-first
@@ -130,9 +130,10 @@ block main
 								colgroup
 								colgroup
 								colgroup
+								colgroup
 								tbody
 									tr
-										td(rowspan="8").table-prices__col1 
+										td(rowspan="8").table-prices__col1.table-prices__col1-borrad 
 											a(href="").table__card.card-areas
 												.card-areas__img 
 													img(src="images/blocks/areas/2.png", alt="alt").card-areas__img-first
@@ -246,9 +247,10 @@ block main
 								colgroup
 								colgroup
 								colgroup
+								colgroup
 								tbody
 									tr
-										td(rowspan="3").table-prices__col1  
+										td(rowspan="3").table-prices__col1.table-prices__col1-borrad  
 											a(href="").table__card.card-areas
 												.card-areas__img 
 													img(src="images/blocks/areas/1.png", alt="alt").card-areas__img-first

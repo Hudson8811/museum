@@ -1,4 +1,6 @@
-new isvek.Bvi();
+new isvek.Bvi({
+	
+});
 
 function onEntry(entry) {
 	entry.forEach(change => {

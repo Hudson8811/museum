@@ -106,8 +106,8 @@
 			margin-top: 10px;
 		}
 		&-text {
-			cursor: default;
-			position: relative;
+/* 			cursor: default;
+ */			position: relative;
 			margin-left: 32px;
 			margin-top: -2px;
 			font-family: 'Ubuntu';
@@ -118,6 +118,7 @@
 			letter-spacing: -0.02em;
 			color: #1C1825;
 			white-space: nowrap;
+			pointer-events: none;
 		}
 	}
 	&__item-datepicker {
@@ -312,4 +313,20 @@
 
 .events-page__tags {
 
+}
+.events-page {
+	.filter-events__dropdown-item {
+		position: relative;
+		min-height: 22px;
+		.checkbox {
+			min-width: 100%;
+			min-height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			.checkbox__label {
+				min-width: 100%;
+			}
+		}
+	}
 }

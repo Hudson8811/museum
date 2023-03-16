@@ -34,3 +34,19 @@ $('.prices-page__overlay').click(function(event) {
 	$('.prices-page__buy-btn').removeClass('active');
 	$('.prices-page__overlay').removeClass('active');
 });
+$('.table-prices__col3, .table-prices__col4, .table-prices__col5').hover(function(event) {
+	$(this).parent().parent().toggleClass('active-icon');
+});
+
+
+
+	var lastScroll = 0;
+	$(window).scroll(function(){
+		var scroll = $(window).scrollTop();
+		if (scroll > lastScroll) {
+			$(".prices-page__tables-header").addClass("tables-header-active");
+		} else {
+			$(".prices-page__tables-header").removeClass("tables-header-active");
+		}
+		lastScroll = scroll;
+	});

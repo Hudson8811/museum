@@ -6,8 +6,8 @@
 //= ./libs/fancybox.umd.js
 //= ./libs/ScrollTrigger.min.js
 //= ./libs/gsap-latest-beta.min.js
-//= ./libs/bvi.js
 //= ./libs/bvi.min.js
+
 //= ./partials/header.js
 //= ./partials/main.js
 

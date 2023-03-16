@@ -119,9 +119,16 @@
 		&-header {
 			position: sticky;
 			z-index: 99;
-			top: 0;
+			top: 92px;
 			left: 0;
 			background: #F7F8FC;
+			transition: all 0.5s ease 0s;
+			@media (max-width: 639px){
+				top: 0;
+			}
+			&.tables-header-active {
+				top: 0;
+			}
 		}
 	}
 	&__table {
@@ -180,7 +187,7 @@
 				a.table-prices__buy {
 					position: absolute;
 					top: 50%;
-					right: 5px;
+					right: 6%;
 					transform: translate(0, -50%);
 					color: #FFFFFF;
 					opacity: 0;
@@ -329,7 +336,6 @@
 		transition: all 0s ease 0s;
 	} */
 
-
 	.table-prices:hover tr.hover {
 		background: #E7E5EC;
 	}
@@ -352,7 +358,6 @@
 		background: #E7E5EC;
 	}
 
-
 	.table-prices td:hover ~ td {
 		background: #f0f1f5;
 		transition: all 0s ease 0s;
@@ -364,9 +369,6 @@
 		transition: all 0s ease 0s;
 	}
 
-
-
-
 	&__left-right {
 		margin-top: 115px;
 		@media (max-width: 992px){
@@ -376,4 +378,82 @@
 			margin-top: 32px;
 		}
 	}
+}
+
+
+.prices-page__checkbox {
+	.checkbox {
+		.checkbox__label {
+			&::before {
+				min-width: 26px;
+				height: 26px;
+			}
+			.checkbox__label-arrow {
+				width: 26px;
+				height: 10px;
+				top: 8px;
+			}
+			span {
+				font-family: 'Ubuntu';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 120%;
+				letter-spacing: -0.02em;
+				color: #1C1825;
+			}
+		}
+	}
+}
+
+.table-prices {
+	border-collapse:separate;
+	border-radius: 50%;
+	moz-border-radius: 10px; /* Firefox */
+	-webkit-border-radius: 10px; /* Safari, Google Chrome */
+	-khtml-border-radius: 10px; /* KHTML */
+	-o-border-radius: 10px; /* Opera */
+	-ms-border-radius: 10px; /* IE8 */
+	border-radius: 10px; /* CSS3 */
+	overflow:hidden;
+	tbody {
+		td {
+		}
+		.table-prices__col1-borrad {
+		}
+		.table-prices__col1 {
+			.card-areas {
+				&:hover{
+					.card-areas__img {
+						img {
+							opacity: 0!important;
+						}
+						.card-areas__img-first {
+							opacity: 1!important;
+						}
+					}
+				}
+			}
+		}
+	}
+	.active-icon {
+		.table-prices__col1 {
+			.card-areas {
+				.card-areas__img {
+					img {
+						opacity: 0!important;
+					}
+					.card-areas__img-first {
+						opacity: 0!important;
+					}
+					.card-areas__img-second {
+						opacity: 1!important;
+					}
+				}
+			}
+		}
+	}
+}
+.prices-page th.table-prices__col1 {
+	padding: 6px 16px;
 }
