@@ -266,16 +266,16 @@
 		width: 440px;
 		max-width: 100%;
 		background: #F2F3F7;
-		padding: 140px 32px 120px;
-		height: 100vh;
-		max-height: 100vh;
+		padding: 140px 32px 32px;
+/* 		height: 100vh;
+ */		max-height: 100vh;
 		overflow: auto;
 		transition: all 0.3s ease 0s;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		@media (max-width: 639px){
-			padding: 77px 20px 80px;
+			padding: 77px 20px 20px;
 		}
 		&.active {
 			left: 0;

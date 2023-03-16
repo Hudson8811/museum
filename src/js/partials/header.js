@@ -49,5 +49,12 @@ $(document).ready(function() {
 			$('.header').removeClass('header-active-border');
 		}
 	});
-
+	
+	var header__menu = $('.header__menu');
+	header__menu.css({'height':'100vh'})
+	$( window ).resize(function() {
+		var header__menu = $('.header__menu');
+		header__menu.css({'height':'100vh'})
+	});
 }); 
+
