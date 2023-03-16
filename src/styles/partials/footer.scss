@@ -28,6 +28,9 @@
 			line-height: 17px;
 			letter-spacing: -0.02em;
 			color: #F7F8FC;
+			&:hover{
+				opacity: 0.7;
+			}
 		}
 	}
 	&__middle {
