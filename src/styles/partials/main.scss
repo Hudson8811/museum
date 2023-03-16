@@ -144,6 +144,10 @@ P, li {
 		color: #00A3FF;
 	} */
 }
+u{
+	text-decoration: none;
+	border-bottom: 1px solid #1c1825;
+}
 
 a.underline-link, a.blue-link {
 	cursor: pointer;
@@ -170,6 +174,16 @@ a.underline-link {
 	color: #000000;
 	&::before, &::after{
 		background-color: #000000;
+	}
+	&:hover {
+		&::before{
+			transition: all 0.1s linear 0.3s;
+			width: 100%;
+		}
+		&::after{
+			transition: all 0.1s linear 0s;
+			width: 0;
+		}
 	}
 }
 a.blue-link {

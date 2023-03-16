@@ -132,7 +132,7 @@
 				border-radius: 10px;
 				transition: all 0.3s ease 0s;
 				&:hover{
-					background-color: #e4e6ee;
+					background-color: #e5e6ea;
 				}
 				p {
 					padding-right: 47px;
@@ -140,6 +140,15 @@
 				}
 				&-center {
 					justify-content: center;
+				}
+				img:first-child{
+					margin-right: 19px;
+				}
+				& > div{
+					display: flex;
+					img{
+						align-self: center;
+					}
 				}
 			}
 			&-btns {
