@@ -210,6 +210,7 @@
 			font-weight: 500;
 			font-size: 28px;
 			line-height: 41px;
+			padding: 0 10px 0 0;
 			&.active {
 				.menu__item-triangle {
 					transform: translate(0%, -50%) rotate(180deg);
@@ -483,11 +484,12 @@
 
 .search-header {
 	position: absolute;
-	z-index: 9;
-	top: 100%;
+	z-index: 999;
+	top: -110%;
 	left: 50%;
 	transform: translate(-50%, 0);
 	width: 100%;
+	min-height: 100%;
 	pointer-events: none;
 	overflow: hidden;
 	height: 0;
@@ -496,8 +498,8 @@
 	transition: all 0.3s ease 0s;
 	opacity: 0;
 	&.active {
+		top: 0;
 		opacity: 1;
-		height: 100px;
 		pointer-events: auto;
 	}
 	&__container {
@@ -507,6 +509,9 @@
 		max-width: 860px;
 		height: 100%;
 		margin: 0 auto;
+		padding: 0 10px;
+		@media (max-width: 639px){
+		}
 	}
 	&__close {
 		cursor: pointer;
@@ -530,6 +535,11 @@
 			width: 100%;
 			padding: 15px 30px;
 			background-color: transparent;
+			@media (max-width: 639px){
+				font-size: 14px;
+				line-height: 16px;
+				padding: 10px 15px;
+			}
 		}
 	} 
 }

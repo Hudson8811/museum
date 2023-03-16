@@ -165,16 +165,6 @@ a.underline-link, a.blue-link {
 		right: 0;
 		width: 100%;
 	}
-	&:hover {
-		&::before{
-			transition: all 0.1s linear 0.3s;
-			width: 100%;
-		}
-		&::after{
-			transition: all 0.1s linear 0s;
-			width: 0;
-		}
-	}
 }
 a.underline-link {
 	color: #000000;
@@ -186,6 +176,16 @@ a.blue-link {
 	color: #00A3FF;
 	&::before, &::after{
 		background-color: #00A3FF;
+	}
+	&:hover {
+		&::before{
+			transition: all 0.1s linear 0.3s;
+			width: 100%;
+		}
+		&::after{
+			transition: all 0.1s linear 0s;
+			width: 0;
+		}
 	}
 }
 .bold-text {

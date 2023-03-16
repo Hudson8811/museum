@@ -1,9 +1,7 @@
 $(document).ready(function() {
-	if ($(window).width() < 639) {
 		$('.menu__link').click(function(event) {
 			$(this).toggleClass('active').next().slideToggle(0);
 		});
-	}
 	console.log($(window).width());
 	$('.header__burger').click(function(event) {
 		$('.header__burger').addClass('active');
@@ -44,11 +42,10 @@ $(document).ready(function() {
 			$(".header").removeClass("header-active");
 		}
 		lastScroll = scroll;
-
+		
 		if(scroll > 100){
-		$('.header').addClass('header-active-border');
+			$('.header').addClass('header-active-border');
 		} else{
-
 			$('.header').removeClass('header-active-border');
 		}
 	});

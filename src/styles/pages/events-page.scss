@@ -90,7 +90,7 @@
 		z-index: 99;
 		top: calc(100% + 0px);
 		left: 50%;
-		padding: 10px;
+		padding: 10px 0;
 		@media (max-width: 639px){
 			opacity: 1;
 			position: relative;
@@ -103,7 +103,24 @@
 		&-item {
 			display: flex;
 			align-items: center;
-			margin-top: 10px;
+			padding: 0 10px;
+			.checkbox__label, .filter-events__dropdown-text {
+				min-height: 32px;
+				display: flex;
+				align-items: center;
+			}
+			.filter-events__dropdown-text {
+			}
+			.checkbox__label {
+				&::before {
+					transform: translate(10px, 5px);
+				}
+				.checkbox__label-arrow {
+					top: 11px;
+					left: 10px;
+				}
+			}
+
 		}
 		&-text {
 /* 			cursor: default;
@@ -317,7 +334,6 @@
 .events-page {
 	.filter-events__dropdown-item {
 		position: relative;
-		min-height: 22px;
 		.checkbox {
 			min-width: 100%;
 			min-height: 100%;
