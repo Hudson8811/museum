@@ -1,4 +1,7 @@
 .prices-page {
+	.card-areas:hover {
+		background: transparent;
+	}
 	&__overlay {
 		position: fixed;
 		z-index: 9998;
@@ -11,6 +14,7 @@
 		pointer-events: none;
 		visibility: hidden;
 		transition: all 0.3s ease 0s;
+		display: none;
 		&.active {
 			opacity: 0.1;
 			pointer-events: auto;
@@ -171,7 +175,7 @@
 			}
 			td {
 				border: 0.5px solid #ffffff;
-				padding: 27px 16px;
+				padding: 27px 0 27px 16px ;
 				font-family: 'Ubuntu';
 				font-style: normal;
 				font-weight: 400;
@@ -185,15 +189,19 @@
 					cursor: pointer;
 				}
 				a.table-prices__buy {
-					position: absolute;
+					/* position: absolute;
 					top: 50%;
 					right: 6%;
-					transform: translate(0, -50%);
+					transform: translate(0, -50%); */
 					color: #FFFFFF;
 					opacity: 0;
 					transition: all 0.3s ease 0s;
 					text-decoration: underline;
 					font-size: 13px;
+					flex: 1 1 auto;
+					text-align: center;
+					padding: 0 5px;
+					display: block;
 					@media (max-width: 1200px){
 						display: none;
 					}
@@ -418,6 +426,10 @@
 	border-radius: 10px; /* CSS3 */
 	overflow:hidden;
 	border: 1px solid #ffffff;
+	&__col-inner {
+		display: flex;
+		align-items: center;
+	}
 	tbody {
 		td {
 		}

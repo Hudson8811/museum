@@ -31,3 +31,12 @@ $(window).scroll( function(){
 		}
 	});
 });
+
+
+
+let history__track_par_height = $('.history__track').parent().height();
+let history__track_height = $('.history__track').children().last().height();
+
+$('.history__track').css('max-height', function(index, value) {
+	return history__track_par_height - history__track_height + 7;
+});
