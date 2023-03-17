@@ -30,6 +30,7 @@
 			display: block;
 		}
 
+
 		&-hover {
 			transition: all 0.7s ease 0s;
 			opacity: 0;
@@ -56,14 +57,13 @@
 			a {
 				color: #00A3FF;
 			}
-		}
-		.partners__item-hover::-webkit-scrollbar {
-			width: 4px;
-			background: rgba(0, 0, 0, 0.1);
-		}
-		.partners__item-hover::-webkit-scrollbar-thumb {
-			background: #1C1825;
-			border-radius: 10px;
+			&::-webkit-scrollbar {
+				width: 4px;
+			}
+			&::-webkit-scrollbar-thumb {
+				background-color: #1C1825;
+				border-radius: 2px;
+			}
 		}
 		&:hover{
 			.partners__item-hover {
@@ -72,7 +72,8 @@
 				transform: translate(0, -50%);
 			}
 		}
-	} 
+	}
+
 	div.partners__item {
 
 		@media (max-width: 992px){
