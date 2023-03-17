@@ -128,11 +128,12 @@
 				justify-content: space-between;
 				align-items: center;
 				min-height: 104px;
+				min-height: 100%;
 				background: #F0F1F5;
 				border-radius: 10px;
 				transition: all 0.3s ease 0s;
 				&:hover{
-					background-color: #e5e6ea;
+					background-color: #e4e6ee;
 				}
 				p {
 					padding-right: 47px;
@@ -141,13 +142,10 @@
 				&-center {
 					justify-content: center;
 				}
-				img:first-child{
-					margin-right: 19px;
-				}
-				& > div{
-					display: flex;
-					img{
-						align-self: center;
+				img {
+					max-width: 100%;
+					&:nth-child(2){
+						margin-left: 15px;
 					}
 				}
 			}
