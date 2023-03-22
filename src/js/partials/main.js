@@ -1,6 +1,5 @@
-new isvek.Bvi({
-	
-});
+new isvek.Bvi({});
+AOS.init();
 
 function onEntry(entry) {
 	entry.forEach(change => {

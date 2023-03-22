@@ -7,6 +7,7 @@
 //= ./libs/ScrollTrigger.min.js
 //= ./libs/gsap-latest-beta.min.js
 //= ./libs/bvi.min.js
+//= ./libs/aos.js
 
 //= ./partials/header.js
 //= ./partials/main.js

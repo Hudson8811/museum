@@ -50,6 +50,11 @@ $(document).ready(function() {
 		}
 	});
 	
-	
+	$(document).click( function(e){
+		var header__search = $( ".search-header__input input, .header__search" );
+		if ( !header__search.is(e.target) && header__search.has(e.target).length === 0 ) { 
+			$('.search-header').removeClass('active');
+		}
+	});
 }); 
 
