@@ -77,6 +77,7 @@
 			max-width: 155px;
 		}
 		a {
+			transition: all 0.3s ease 0s;
 			font-size: 18px;
 			@media (max-width: 992px){
 				font-size: 16px;
@@ -98,6 +99,13 @@
 		&:not(:first-child){
 			a {
 				border-left: none;
+			}
+		}
+		&.swiper-slide-thumb-active {
+			a.prices-page__swiper-btn {
+				background: #1c1825;
+				border: 1px solid #1c1825;
+				color: #fff;
 			}
 		}
 	}
@@ -136,7 +144,14 @@
 		}
 	}
 	&__table {
-		&-wrapper {
+		&-swiper {
+			.swiper-slide {
+				opacity: 0!important;
+				transition: all 0.5s ease 0s;
+				&.swiper-slide-active {
+					opacity: 1!important;
+				}
+			}
 		}
 		.table__card {
 			border-radius: 10px 0px 0px 10px;
@@ -146,6 +161,7 @@
 			justify-content: center;
 
 		}
+
 	}
 	table {
 		margin-top: 10px;

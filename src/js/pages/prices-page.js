@@ -5,6 +5,13 @@ var swiper = new Swiper(".prices-page__swiper-btns", {
 			slidesPerView: 4,
 		},
 	},
+	watchSlidesProgress: true,
+});
+var swiper1 = new Swiper(".prices-page__table-swiper", {
+	thumbs: {
+		swiper: swiper,
+	},
+	effect:'fade',
 });
 
 	$("body").on('mouseover mouseleave', '.table-prices td', function (e) {

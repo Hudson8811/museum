@@ -8,21 +8,21 @@ block vars
 
 block main
 	.internal-page
-		.prices-page
-			.prices-page__header.js-hide  
+		.prices-page(data-aos="fade")
+			.prices-page__header 
 				.container
 					h1 Цены и льготы 
 					.prices-page__header-bottom
-						.prices-page__swiper-btns.swiper 
+						.prices-page__swiper-btns.swiper(thumbsSlider="") 
 							.swiper-wrapper 
 								.prices-page__slide.swiper-slide 
-									a(href='').prices-page__swiper-btn.btn-transparent Входные билеты
+									a.prices-page__swiper-btn.btn-transparent Входные билеты
 								.prices-page__slide.swiper-slide 
-									a(href='').prices-page__swiper-btn.btn-transparent Экскурсии
+									a.prices-page__swiper-btn.btn-transparent Экскурсии
 								.prices-page__slide.swiper-slide 
-									a(href='').prices-page__swiper-btn.btn-transparent Курсы
+									a.prices-page__swiper-btn.btn-transparent Курсы
 								.prices-page__slide.swiper-slide 
-									a(href='').prices-page__swiper-btn.btn-transparent Мероприятия
+									a.prices-page__swiper-btn.btn-transparent Мероприятия
 						.prices-page__checkbox
 							.checkbox
 								input#prices-page__checkbox.checkbox__input(type='checkbox' name='')
@@ -46,302 +46,1196 @@ block main
 								th.table-prices__col3 Взрослые
 								th.table-prices__col4 Пенсионеры, студенты
 								th.table-prices__col5 Дети до 16
-						.prices-page__table-wrapper
-							table().prices-page__table.table-prices
-								colgroup
-								colgroup
-								colgroup
-								colgroup
-								colgroup
-								tbody
-									tr
-										td(rowspan="5").table-prices__col1.table-prices__col1-borrad  
-											a(href="").table__card.card-areas
-												.card-areas__img 
-													img(src="images/blocks/areas/2.png", alt="alt").card-areas__img-first
-													img(src="images/blocks/areas/22.png", alt="alt").card-areas__img-second
-												h4.card-areas__title 
-													span Главное здание
-										td.table-prices__col2  
-											span № 6 (1 этаж - малый зал)
-										td.table-prices__col3  
-											.table-prices__col-inner
-												span 70 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-										td.table-prices__col4  
-											.table-prices__col-inner
-												span 50 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-										td.table-prices__col5  
-											.table-prices__col-inner
-												span 0 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-									tr
-										td.td-none
-										td.table-prices__col2  
-											span № 6 (1 этаж - малый зал)
-										td.table-prices__col3  
-											.table-prices__col-inner
-												span 70 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-										td.table-prices__col4  
-											.table-prices__col-inner
-												span 50 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-										td.table-prices__col5  
-											.table-prices__col-inner
-												span 0 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-									tr
-										td.td-none
-										td.table-prices__col2  
-											span № 6 (1 этаж - малый зал)
-										td.table-prices__col3  
-											.table-prices__col-inner
-												span 70 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-										td.table-prices__col4  
-											.table-prices__col-inner
-												span 50 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-										td.table-prices__col5  
-											.table-prices__col-inner
-												span 0 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-									tr
-										td.td-none
-										td.table-prices__col2  
-											span № 6 (1 этаж - малый зал)
-										td.table-prices__col3  
-											.table-prices__col-inner
-												span 70 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-										td.table-prices__col4  
-											.table-prices__col-inner
-												span 50 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-										td.table-prices__col5  
-											.table-prices__col-inner
-												span 0 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-									tr
-										td.td-none
-										td.table-prices__col2  
-											span № 6 (1 этаж - малый зал)
-										td.table-prices__col3  
-											.table-prices__col-inner
-												span 70 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-										td.table-prices__col4  
-											.table-prices__col-inner
-												span 50 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-										td.table-prices__col5  
-											.table-prices__col-inner
-												span 0 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-							table().prices-page__table.table-prices
-								colgroup
-								colgroup
-								colgroup
-								colgroup
-								colgroup
-								tbody
-									tr
-										td(rowspan="8").table-prices__col1.table-prices__col1-borrad 
-											a(href="").table__card.card-areas
-												.card-areas__img 
-													img(src="images/blocks/areas/3.png", alt="alt").card-areas__img-first
-													img(src="images/blocks/areas/33.png", alt="alt").card-areas__img-second
-												h4.card-areas__title 
-													span КВЦ Русского музея
-										td.table-prices__col2  
-											span № 6 (1 этаж - малый зал)
-										td.table-prices__col3  
-											.table-prices__col-inner
-												span 70 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-										td.table-prices__col4  
-											.table-prices__col-inner
-												span 50 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-										td.table-prices__col5  
-											.table-prices__col-inner
-												span 0 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-									tr
-										td.td-none
-										td.table-prices__col2  
-											span № 6 (1 этаж - малый зал)
-										td.table-prices__col3  
-											.table-prices__col-inner
-												span 70 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-										td.table-prices__col4  
-											.table-prices__col-inner
-												span 50 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-										td.table-prices__col5  
-											.table-prices__col-inner
-												span 0 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-									tr
-										td.td-none
-										td.table-prices__col2  
-											span № 6 (1 этаж - малый зал)
-										td.table-prices__col3  
-											.table-prices__col-inner
-												span 70 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-										td.table-prices__col4  
-											.table-prices__col-inner
-												span 50 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-										td.table-prices__col5  
-											.table-prices__col-inner
-												span 0 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-									tr
-										td.td-none
-										td.table-prices__col2  
-											span № 6 (1 этаж - малый зал)
-										td.table-prices__col3  
-											.table-prices__col-inner
-												span 70 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-										td.table-prices__col4  
-											.table-prices__col-inner
-												span 50 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-										td.table-prices__col5  
-											.table-prices__col-inner
-												span 0 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-									tr
-										td.td-none
-										td.table-prices__col2  
-											span № 6 (1 этаж - малый зал)
-										td.table-prices__col3  
-											.table-prices__col-inner
-												span 70 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-										td.table-prices__col4  
-											.table-prices__col-inner
-												span 50 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-										td.table-prices__col5  
-											.table-prices__col-inner
-												span 0 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-									tr
-										td.td-none
-										td.table-prices__col2  
-											span № 6 (1 этаж - малый зал)
-										td.table-prices__col3  
-											.table-prices__col-inner
-												span 70 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-										td.table-prices__col4  
-											.table-prices__col-inner
-												span 50 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-										td.table-prices__col5  
-											.table-prices__col-inner
-												span 0 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-									tr
-										td.td-none
-										td.table-prices__col2  
-											span № 6 (1 этаж - малый зал)
-										td.table-prices__col3  
-											.table-prices__col-inner
-												span 70 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-										td.table-prices__col4  
-											.table-prices__col-inner
-												span 50 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-										td.table-prices__col5  
-											.table-prices__col-inner
-												span 0 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-									tr
-										td.td-none
-										td.table-prices__col2  
-											span № 6 (1 этаж - малый зал)
-										td.table-prices__col3  
-											.table-prices__col-inner
-												span 70 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-										td.table-prices__col4  
-											.table-prices__col-inner
-												span 50 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-										td.table-prices__col5  
-											.table-prices__col-inner
-												span 0 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-							table().prices-page__table.table-prices
-								colgroup
-								colgroup
-								colgroup
-								colgroup
-								colgroup
-								tbody
-									tr
-										td(rowspan="3").table-prices__col1.table-prices__col1-borrad  
-											a(href="").table__card.card-areas
-												.card-areas__img 
-													img(src="images/blocks/areas/1.png", alt="alt").card-areas__img-first
-													img(src="images/blocks/areas/11.png", alt="alt").card-areas__img-second
-												h4.card-areas__title 
-													span Дом ремесел
-										td.table-prices__col2  
-											span № 6 (1 этаж - малый зал)
-										td.table-prices__col3  
-											.table-prices__col-inner
-												span 70 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-										td.table-prices__col4  
-											.table-prices__col-inner
-												span 50 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-										td.table-prices__col5  
-											.table-prices__col-inner
-												span 0 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-									tr
-										td.td-none
-										td.table-prices__col2  
-											span № 6 (1 этаж - малый зал)
-										td.table-prices__col3  
-											.table-prices__col-inner
-												span 70 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-										td.table-prices__col4  
-											.table-prices__col-inner
-												span 50 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-										td.table-prices__col5  
-											.table-prices__col-inner
-												span 0 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-									tr
-										td.td-none
-										td.table-prices__col2  
-											span № 6 (1 этаж - малый зал)
-										td.table-prices__col3  
-											.table-prices__col-inner
-												span 70 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-										td.table-prices__col4  
-											.table-prices__col-inner
-												span 50 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
-										td.table-prices__col5  
-											.table-prices__col-inner
-												span 0 ₽ 
-												<a class="table-prices__buy" href="">Купить билет</a>
+						.prices-page__table-swiper.swiper 
+							.swiper-wrapper 
+								.swiper-slide
+									.prices-page__table-wrapper
+										table().prices-page__table.table-prices
+											colgroup
+											colgroup
+											colgroup
+											colgroup
+											colgroup
+											tbody
+												tr
+													td(rowspan="5").table-prices__col1.table-prices__col1-borrad  
+														a(href="").table__card.card-areas
+															.card-areas__img 
+																img(src="images/blocks/areas/2.png", alt="alt").card-areas__img-first
+																img(src="images/blocks/areas/22.png", alt="alt").card-areas__img-second
+															h4.card-areas__title 
+																span Главное здание
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+										table().prices-page__table.table-prices
+											colgroup
+											colgroup
+											colgroup
+											colgroup
+											colgroup
+											tbody
+												tr
+													td(rowspan="8").table-prices__col1.table-prices__col1-borrad 
+														a(href="").table__card.card-areas
+															.card-areas__img 
+																img(src="images/blocks/areas/3.png", alt="alt").card-areas__img-first
+																img(src="images/blocks/areas/33.png", alt="alt").card-areas__img-second
+															h4.card-areas__title 
+																span КВЦ Русского музея
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+										table().prices-page__table.table-prices
+											colgroup
+											colgroup
+											colgroup
+											colgroup
+											colgroup
+											tbody
+												tr
+													td(rowspan="3").table-prices__col1.table-prices__col1-borrad  
+														a(href="").table__card.card-areas
+															.card-areas__img 
+																img(src="images/blocks/areas/1.png", alt="alt").card-areas__img-first
+																img(src="images/blocks/areas/11.png", alt="alt").card-areas__img-second
+															h4.card-areas__title 
+																span Дом ремесел
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+								.swiper-slide
+									.prices-page__table-wrapper
+										table().prices-page__table.table-prices
+											colgroup
+											colgroup
+											colgroup
+											colgroup
+											colgroup
+											tbody
+												tr
+													td(rowspan="5").table-prices__col1.table-prices__col1-borrad  
+														a(href="").table__card.card-areas
+															.card-areas__img 
+																img(src="images/blocks/areas/2.png", alt="alt").card-areas__img-first
+																img(src="images/blocks/areas/22.png", alt="alt").card-areas__img-second
+															h4.card-areas__title 
+																span Главное здание
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+										table().prices-page__table.table-prices
+											colgroup
+											colgroup
+											colgroup
+											colgroup
+											colgroup
+											tbody
+												tr
+													td(rowspan="8").table-prices__col1.table-prices__col1-borrad 
+														a(href="").table__card.card-areas
+															.card-areas__img 
+																img(src="images/blocks/areas/3.png", alt="alt").card-areas__img-first
+																img(src="images/blocks/areas/33.png", alt="alt").card-areas__img-second
+															h4.card-areas__title 
+																span КВЦ Русского музея
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+										table().prices-page__table.table-prices
+											colgroup
+											colgroup
+											colgroup
+											colgroup
+											colgroup
+											tbody
+												tr
+													td(rowspan="3").table-prices__col1.table-prices__col1-borrad  
+														a(href="").table__card.card-areas
+															.card-areas__img 
+																img(src="images/blocks/areas/1.png", alt="alt").card-areas__img-first
+																img(src="images/blocks/areas/11.png", alt="alt").card-areas__img-second
+															h4.card-areas__title 
+																span Дом ремесел
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+								.swiper-slide
+									.prices-page__table-wrapper
+										table().prices-page__table.table-prices
+											colgroup
+											colgroup
+											colgroup
+											colgroup
+											colgroup
+											tbody
+												tr
+													td(rowspan="5").table-prices__col1.table-prices__col1-borrad  
+														a(href="").table__card.card-areas
+															.card-areas__img 
+																img(src="images/blocks/areas/2.png", alt="alt").card-areas__img-first
+																img(src="images/blocks/areas/22.png", alt="alt").card-areas__img-second
+															h4.card-areas__title 
+																span Главное здание
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+										table().prices-page__table.table-prices
+											colgroup
+											colgroup
+											colgroup
+											colgroup
+											colgroup
+											tbody
+												tr
+													td(rowspan="8").table-prices__col1.table-prices__col1-borrad 
+														a(href="").table__card.card-areas
+															.card-areas__img 
+																img(src="images/blocks/areas/3.png", alt="alt").card-areas__img-first
+																img(src="images/blocks/areas/33.png", alt="alt").card-areas__img-second
+															h4.card-areas__title 
+																span КВЦ Русского музея
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+										table().prices-page__table.table-prices
+											colgroup
+											colgroup
+											colgroup
+											colgroup
+											colgroup
+											tbody
+												tr
+													td(rowspan="3").table-prices__col1.table-prices__col1-borrad  
+														a(href="").table__card.card-areas
+															.card-areas__img 
+																img(src="images/blocks/areas/1.png", alt="alt").card-areas__img-first
+																img(src="images/blocks/areas/11.png", alt="alt").card-areas__img-second
+															h4.card-areas__title 
+																span Дом ремесел
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+								.swiper-slide
+									.prices-page__table-wrapper
+										table().prices-page__table.table-prices
+											colgroup
+											colgroup
+											colgroup
+											colgroup
+											colgroup
+											tbody
+												tr
+													td(rowspan="5").table-prices__col1.table-prices__col1-borrad  
+														a(href="").table__card.card-areas
+															.card-areas__img 
+																img(src="images/blocks/areas/2.png", alt="alt").card-areas__img-first
+																img(src="images/blocks/areas/22.png", alt="alt").card-areas__img-second
+															h4.card-areas__title 
+																span Главное здание
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+										table().prices-page__table.table-prices
+											colgroup
+											colgroup
+											colgroup
+											colgroup
+											colgroup
+											tbody
+												tr
+													td(rowspan="8").table-prices__col1.table-prices__col1-borrad 
+														a(href="").table__card.card-areas
+															.card-areas__img 
+																img(src="images/blocks/areas/3.png", alt="alt").card-areas__img-first
+																img(src="images/blocks/areas/33.png", alt="alt").card-areas__img-second
+															h4.card-areas__title 
+																span КВЦ Русского музея
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+										table().prices-page__table.table-prices
+											colgroup
+											colgroup
+											colgroup
+											colgroup
+											colgroup
+											tbody
+												tr
+													td(rowspan="3").table-prices__col1.table-prices__col1-borrad  
+														a(href="").table__card.card-areas
+															.card-areas__img 
+																img(src="images/blocks/areas/1.png", alt="alt").card-areas__img-first
+																img(src="images/blocks/areas/11.png", alt="alt").card-areas__img-second
+															h4.card-areas__title 
+																span Дом ремесел
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+												tr
+													td.td-none
+													td.table-prices__col2  
+														span № 6 (1 этаж - малый зал)
+													td.table-prices__col3  
+														.table-prices__col-inner
+															span 70 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col4  
+														.table-prices__col-inner
+															span 50 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
+													td.table-prices__col5  
+														.table-prices__col-inner
+															span 0 ₽ 
+															<a class="table-prices__buy" href="">Купить билет</a>
 
 
 
