@@ -1,7 +1,5 @@
 new isvek.Bvi({
 	target: '.header__visible',
-	fontSize: 24,
-	theme: 'white',
 	panelFixed: false,
 });
 AOS.init();
