@@ -1,4 +1,9 @@
-new isvek.Bvi({});
+new isvek.Bvi({
+	target: '.header__visible',
+	fontSize: 24,
+	theme: 'black',
+	panelFixed: false,
+});
 AOS.init();
 
 function onEntry(entry) {
