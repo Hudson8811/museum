@@ -1,3 +1,37 @@
+.bvi-panel {
+  position: fixed!important;
+  top: auto!important;
+  left: auto!important;
+  bottom: 0;
+  margin: 0!important;
+  width: 300px!important;
+}
+.bvi-blocks.bvi-block-center {
+  flex-direction: column!important;
+}
+.bvi-blocks.bvi-block-center .bvi-block:nth-child(2),
+.bvi-blocks.bvi-block-center .bvi-block:nth-child(3){
+  display: none;
+}
+
+
+.bvi-link.bvi-link-fixed-top.bvi-no-styles.bvi-show {
+  top: auto!important;
+  bottom: 15px!important;
+  right: 15px!important;
+}
+
+.bvi-panel a.bvi-link[data-bvi=panel-hide] {
+  margin-top: 15px!important;
+  display: inline-block!important;
+}
+.bvi-panel a.bvi-link[data-bvi=panel-hide]::before {
+  content: 'Скрыть панель';
+}
+
+
+
+
 body{
 	&.overflow-hidden {
 		overflow: hidden;
