@@ -1,6 +1,5 @@
 new isvek.Bvi({
 	target: '.header__visible',
-	panelFixed: false,
 });
 AOS.init();
 
