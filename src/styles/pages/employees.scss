@@ -46,8 +46,21 @@
 			margin-left: -10px;
 		}
 		&-img {
+			border-radius: 12px;
+			overflow: hidden;
+			width: 100%;
+			padding-bottom: 109.79%;
+			position: relative;
+			@media (max-width: 992px){
+				padding-bottom: 105.68%;
+			}
 			img {
+				position: absolute;
+				top: 0;
+				left: 0;
 				width: 100%;
+				height: 100%;
+				object-fit: cover;
 			}
 		} 
 		&-info {

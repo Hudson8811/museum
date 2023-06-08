@@ -1,8 +1,8 @@
 $(document).ready(function() {
-		$('.menu__link').click(function(event) {
-			$(this).toggleClass('active').next().slideToggle(0);
-		});
-	console.log($(window).width());
+    $('.menu__link').click(function(event) {
+        $(this).toggleClass('active').next().slideToggle(0);
+    });
+
 	$('.header__burger').click(function(event) {
 		$('.header__burger').addClass('active');
 		$(".menu").addClass('active');

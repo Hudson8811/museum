@@ -73,9 +73,10 @@
 			}
 		}
 		.block-left__item-mob {
-			display: none;
+			//display: none;
+			background: #f7f8fc;
 			@media (max-width: 992px){
-				display: block;
+				//display: block;
 				margin-top: 32px!important;
 			}
 		}
@@ -110,12 +111,14 @@
 				flex: 0 1 33.333%;
 				@media (max-width: 992px){
 					flex: 1 1 100%;
+					width: 100%;
 				}
 			}
 			.block-right {
 				flex: 0 1 66.666%;
 				@media (max-width: 992px){
 					flex: 1 1 100%;
+					width: 100%;
 				}
 			}
 		}
@@ -163,6 +166,8 @@
 			border: 1px solid #1C1825;
 			color: #ffffff;
 			margin-top: 20px;
+			width: 100%;
+			display: block;
 		}
 	}
 

@@ -86,6 +86,19 @@
 				}
 			}
 		}
+		span,
+		a{
+			height: 41px;
+			padding: 9px 15px;
+			display: inline-block;
+			font-family: Ubuntu;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 130%;
+			letter-spacing: -.02em;
+			color: #1c1825;
+		}
 		&-next {
 			cursor: pointer;
 			width: 5px;

@@ -23,8 +23,8 @@
 //= ./pages/events-page.js
 //= ./pages/prices-page.js
 //= ./pages/plan-page.js
-//= ./pages/about.js
-//= ./pages/mediacenter-page.js
-//= ./pages/search-page.js
+// ./pages/about.js
+// ./pages/mediacenter-page.js
+// ./pages/search-page.js
 //= ./pages/history.js
 //= ./pages/contact-page.js

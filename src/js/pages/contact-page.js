@@ -1,7 +1,3 @@
-$('.contacts-page__btn-send').click(function(event) {
-	$('.contacts-page__overlay').addClass('active');
-	$('.contacts-page__popup').addClass('active');
-});
 $('.contacts-page__overlay').click(function(event) {
 	$('.contacts-page__overlay').removeClass('active');
 	$('.contacts-page__popup').removeClass('active');
@@ -11,7 +7,12 @@ $('.contacts-page__popup-close').click(function(event) {
 	$('.contacts-page__popup').removeClass('active');
 });
 
+function showFormPop(){
+    $('.contacts-page__overlay').addClass('active');
+    $('.contacts-page__popup').addClass('active');
+}
 
+/*
 function contactsinit() {
 	let myMap = new ymaps.Map('contacts-page__map', {
 		center: [68.96785276838722,33.079111048916296],
@@ -102,3 +103,4 @@ function contactsinit() {
 ymaps.ready(contactsinit);
 
 
+*/

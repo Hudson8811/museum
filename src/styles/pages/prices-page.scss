@@ -63,6 +63,8 @@
 	} 
 	&__swiper-btn {
 		border-radius: 0;
+		pointer-events: none;
+		user-select: none;
 	}
 	&__swiper-btns {
 		flex: 1 1 auto;
@@ -73,10 +75,11 @@
 		}
 	}
 	&__slide {
+		cursor: pointer;
 		@media (max-width: 992px){
 			max-width: 155px;
 		}
-		a {
+		> div {
 			transition: all 0.3s ease 0s;
 			font-size: 18px;
 			@media (max-width: 992px){
@@ -87,22 +90,22 @@
 			}
 		}
 		&:first-child{
-			a {
+			> div {
 				border-radius: 10px 0px 0px 10px;
 			}
 		}
 		&:last-child{
-			a {
+			> div {
 				border-radius: 0px 10px 10px 0px;
 			}
 		}
 		&:not(:first-child){
-			a {
+			> div {
 				border-left: none;
 			}
 		}
 		&.swiper-slide-thumb-active {
-			a.prices-page__swiper-btn {
+			> div.prices-page__swiper-btn {
 				background: #1c1825;
 				border: 1px solid #1c1825;
 				color: #fff;
@@ -131,15 +134,18 @@
 		&-header {
 			position: sticky;
 			z-index: 99;
-			top: 92px;
+			top: 0;
 			left: 0;
-			background: #F7F8FC;
+			background: transparent;
 			transition: all 0.5s ease 0s;
 			@media (max-width: 639px){
 				top: 0;
 			}
 			&.tables-header-active {
 				top: 0;
+			}
+			th{
+				border-color: transparent !important;
 			}
 		}
 	}
@@ -161,7 +167,9 @@
 			justify-content: center;
 
 		}
-
+		&-wrapper{
+			overflow: auto;
+		}
 	}
 	table {
 		margin-top: 10px;
@@ -216,7 +224,7 @@
 					font-size: 13px;
 					flex: 1 1 auto;
 					text-align: center;
-					padding: 15px 5px;
+					padding: 0 5px;
 					display: block;
 					@media (max-width: 1200px){
 						display: none;
@@ -263,9 +271,9 @@
 		&__col1 {
 			position: relative;
 			z-index: 9;
-			padding: 0;
 			width: 338px;
 			border-right: 1px solid #fff;
+
 			@media (max-width: 1200px){
 				width: 250px;
 			}
@@ -279,10 +287,12 @@
 			background: #f0f1f5!important;
 			&:hover{
 				background: #f0f1f5!important;
+				&.table-prices__col1-first{
+					color: #1c1825;
+				}
 			}
 		}
 		&__col2 {
-			pointer-events: none;
 			@media (max-width: 800px){
 				width: 300px;
 				min-width: 300px;
@@ -329,7 +339,15 @@
 		}
 	}
 
+	td.table-prices__col1{
+		&:not(.table-prices__col1-first){
+			padding: 0;
+		}
+	}
 
+	td.table-prices__col2{
+		pointer-events: none;
+	}
 
 
 /* 	.table-prices:hover colgroup.hover:nth-child(1)~tbody td:nth-child(1),
@@ -486,4 +504,10 @@
 }
 .prices-page th.table-prices__col1 {
 	padding: 6px 16px;
+	background: transparent !important;
+}
+
+.table-prices__col--active{
+	background: transparent!important;
+	border-right: 0 solid #fff;
 }

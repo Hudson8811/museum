@@ -221,9 +221,16 @@
 }
 
 
-
+.checkbox{
+	position: relative;
+}
 .checkbox__input {
-	display: none;
+	width: 1px;
+	height: 1px;
+	position: absolute;
+	left: 11px;
+	opacity: 0;
+	pointer-events: none;
 }
 .checkbox__input:checked + .checkbox__label .checkbox__label-arrow {
 	transform: scale(1);

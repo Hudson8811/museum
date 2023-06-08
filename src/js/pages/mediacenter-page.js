@@ -4,23 +4,29 @@ const checkboxes = document.querySelectorAll(checkboxesClass);
 const getTotalItemsEl = document.querySelector('#js-items-total');
 const getFilteredItemsEl = document.querySelector('#js-items-filtered');
 
-const iso = new Isotope(elem, {
-	itemSelector: '.mediacenter-page__item-wrapper'
-});
+$(document).ready(function (){
+    if ($('.mediacenter-page__item-wrapper').length > 0){
+        const iso = new Isotope(elem, {
+            itemSelector: '.mediacenter-page__item-wrapper'
+        });
+        document.addEventListener('input', (event) => {
+            if (!event.target.matches(checkboxesClass)) return;
+            const inclusives = [];
+            for (const checkbox of checkboxes) {
+                if (checkbox.checked) {
+                    inclusives.push(checkbox.value);
+                }
+            }
 
-document.addEventListener('input', (event) => {
-	if (!event.target.matches(checkboxesClass)) return; 
-	const inclusives = [];
-	for (const checkbox of checkboxes) {
-		if (checkbox.checked) {
-			inclusives.push(checkbox.value);
-		}
-	}
+            const filterValue = inclusives.length ? inclusives.join(', ') : '*';
+            iso.arrange({ filter: filterValue });
+            updateFilteredCount();
+        });
+    }
+})
 
-	const filterValue = inclusives.length ? inclusives.join(', ') : '*';
-	iso.arrange({ filter: filterValue });
-	updateFilteredCount(); 
-});
+
+
 
 $('.mediacenter-page__filter-wrapper').click(function(event) {
 	$(this).toggleClass('active');

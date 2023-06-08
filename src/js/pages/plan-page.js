@@ -1,22 +1,31 @@
-var swiper = new Swiper(".plan-page__swiper-btns", {
-	slidesPerView: 'auto',
-	breakpoints: {
-		991: {
-			slidesPerView: 3,
-		},
-	},
+$(document).ready(function () {
+    if ($('.plan-page').length > 0 || $('.contacts-page').length > 0) {
+
+        var planSwiper = new Swiper(".plan-page__swiper-btns", {
+            slidesPerView: 'auto',
+            breakpoints: {
+                991: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+        var planSwiper2 = new Swiper(".swiper-plan-map", {
+            spaceBetween: 0,
+            thumbs: {
+                swiper: planSwiper,
+            },
+            effect: 'fade',
+            allowTouchMove: false,
+        });
+
+        $(document).on('click', '.plan-page__slide',function (){
+            event.preventDefault();
+            planSwiper2.slideTo($(this).index())
+        });
+    }
 });
-var swiper2 = new Swiper(".swiper-plan-map", {
-	spaceBetween: 0,
-	thumbs: {
-		swiper: swiper,
-	},
-	effect: 'fade',
-	allowTouchMove: false,
-});
 
-
-
+/*
 function planinit1() {
 	let myMap = new ymaps.Map('plan__map1', {
 		center: [68.97283754942652,33.07591499999998],
@@ -39,22 +48,21 @@ function planinit1() {
 		iconContentOffset: [55, 20],
 		iconContentLayout: MyIconContentLayout1
 	});
-	
 
 
 
 
-	myMap.controls.remove('geolocationControl'); 
-	myMap.controls.remove('searchControl'); 
-	myMap.controls.remove('trafficControl'); 
+
+	myMap.controls.remove('geolocationControl');
+	myMap.controls.remove('searchControl');
+	myMap.controls.remove('trafficControl');
 	myMap.controls.remove('typeSelector');
 	myMap.controls.remove('fullscreenControl');
 	myMap.controls.remove('rulerControl');
 	myMap.controls.remove('zoomControl');
-	myMap.behaviors.enable('scrollZoom'); 
+	myMap.behaviors.enable('scrollZoom');
 
 	myMap.geoObjects.add(placemark1);
-
 }
 
 ymaps.ready(planinit1);
@@ -83,19 +91,19 @@ function planinit2() {
 		iconContentOffset: [55, 20],
 		iconContentLayout: MyIconContentLayout2
 	});
-	
 
 
 
 
-	myMap.controls.remove('geolocationControl'); 
-	myMap.controls.remove('searchControl'); 
-	myMap.controls.remove('trafficControl'); 
+
+	myMap.controls.remove('geolocationControl');
+	myMap.controls.remove('searchControl');
+	myMap.controls.remove('trafficControl');
 	myMap.controls.remove('typeSelector');
 	myMap.controls.remove('fullscreenControl');
 	myMap.controls.remove('rulerControl');
 	myMap.controls.remove('zoomControl');
-	myMap.behaviors.enable('scrollZoom'); 
+	myMap.behaviors.enable('scrollZoom');
 
 	myMap.geoObjects.add(placemark2);
 
@@ -127,22 +135,24 @@ function planinit3() {
 		iconContentOffset: [55, 20],
 		iconContentLayout: MyIconContentLayout3
 	});
-	
 
 
 
 
-	myMap.controls.remove('geolocationControl'); 
-	myMap.controls.remove('searchControl'); 
-	myMap.controls.remove('trafficControl'); 
+
+	myMap.controls.remove('geolocationControl');
+	myMap.controls.remove('searchControl');
+	myMap.controls.remove('trafficControl');
 	myMap.controls.remove('typeSelector');
 	myMap.controls.remove('fullscreenControl');
 	myMap.controls.remove('rulerControl');
 	myMap.controls.remove('zoomControl');
-	myMap.behaviors.enable('scrollZoom'); 
+	myMap.behaviors.enable('scrollZoom');
 
 	myMap.geoObjects.add(placemark3);
 
 }
 
 ymaps.ready(planinit3);
+
+ */

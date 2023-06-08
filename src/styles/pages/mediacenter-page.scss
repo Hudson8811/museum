@@ -36,6 +36,7 @@
 		margin-top: 50px;
 		display: flex;
 		justify-content: center;
+		user-select: none;
 		@media (max-width: 639px){
 			margin: 0;
 			display: flex;
@@ -118,6 +119,8 @@
 	&__items {
 		margin: -5px;
 		margin-top: 45px;
+		display: flex;
+		flex-wrap: wrap;
 	}
 	&__item-wrapper {
 		padding: 5px;
