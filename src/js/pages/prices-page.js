@@ -66,5 +66,7 @@ $(document).ready(function (){
             }
             lastScroll = scroll;
         });
+
+        AOS.refresh();
     }
 });

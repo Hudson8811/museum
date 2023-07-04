@@ -1,7 +1,7 @@
 new isvek.Bvi({
 	target: '.header__visible',
 });
-AOS.init();
+
 
 function onEntry(entry) {
 	entry.forEach(change => {
@@ -24,6 +24,8 @@ $(document).ready(function() {
         $('.gallary-block__item:hidden').show(300);
         $('.gallary-block__item:hidden').length < 1 ? $('.gallary-block__show-more-btn').hide() : false;
     });
+
+    AOS.init();
 });
 
 
